@@ -1,0 +1,166 @@
+body {
+    font-family: Impact, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F3F5FC;
+    margin: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.header, .content, footer {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.animation {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left, .right {
+    width: 48%;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.right textarea {
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    padding: 10px;
+    width: 48%;
+    border: none;
+    border-radius: 5px;
+    background-color: #D8DFE8;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+#copyButton {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #0A3871;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#copyButton:hover {
+    background-color: #218838;
+}
+
+#pasteButton {
+    background-color: #926b92;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#pasteButton:hover {
+    background-color: #218838;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .buttons button {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button, #pasteButton, #copyButton {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .buttons button:last-child, #pasteButton, #copyButton {
+        margin-bottom: 0;
+    }
+}
+
+

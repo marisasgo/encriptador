@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/Logo.png" alt="Logo" class="logo">
+            <h1>Encriptador</h1>
+        </div>
+        <img src="img/animacion.gif" alt="Animacion" class="animation">
+        <div class="content">
+            <div class="left">
+                <textarea id="inputText" placeholder="Escribe el texto aqui..."></textarea>
+                <div class="buttons">
+                    <button onclick="encryptText()">Encriptar</button>
+                    <button onclick="decryptText()">Desencriptar</button>
+                </div>
+                <button id="pasteButton" onclick="pasteFromClipboard()">Pegar</button>
+            </div>
+            <div class="right">
+                <textarea id="outputText" placeholder="Rsultado..." readonly></textarea>
+                <button id="copyButton" onclick="copyToClipboard()">Copiar</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Desarrollado por Marisa Umaño, Agosto 2024</p>
+        </footer>
+
+    </div>
+    <script src="JavaScript/scripts.js"></script>
+
+</body>
+</html>
